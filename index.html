@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <i data-lucide="qr-code" class="qr-code"></i>
+        <h1>QR Generator</h1>
+        <p>
+          Genera códigos QR de alta calidad de forma rápida y sencilla. Diseño
+          minimalista con máxima funcionalidad.
+        </p>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h3>Configuración</h3>
+        <label for="qr-content">Text o URL</label>
+        <textarea name="url-text-content" id="qr-content">
+Ingresa el texto, URL o datos que quieres conertir a QR...</textarea
+        >
+        <label for="range">Tamaño</label>
+        <input ide="range" type="range" />
+        <label for="bug-fixes">Nivel de corrección de errores</label>
+        <select name="bug-fixes" id="bug-fixes">
+          <option value="bajo">Bajo (L) - 7%</option>
+          <option value="medio">Medio (M) - 15%</option>
+          <option value="alto">Alto (Q) - 25%</option>
+          <option value="muy alto">Muy alto (H) - 30%</option>
+        </select>
+      </div>
+      <div>
+        <h3>Código QR</h3>
+        <div></div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
