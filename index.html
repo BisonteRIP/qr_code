@@ -8,36 +8,42 @@
   </head>
   <body>
     <header>
-      <div class="container main-content">
+      <div class="container header-content">
         <div class="title-content">
           <i data-lucide="qr-code" class="qr-code"></i>
           <h1 class="title main-title">QR Generator</h1>
         </div>
-        <p class="main-text">
+        <p class="header-text">
           Genera códigos QR de alta calidad de forma rápida y sencilla. Diseño
           minimalista <br />
           con máxima funcionalidad.
         </p>
       </div>
     </header>
-    <main>
-      <div>
-        <h3>Configuración</h3>
-        <label for="qr-content">Text o URL</label>
-        <textarea name="url-text-content" id="qr-content">
-Ingresa el texto, URL o datos que quieres conertir a QR...</textarea
+    <main class="container main-content">
+      <div class="main-setting">
+        <h3 class="setting-title">Configuración</h3>
+        <label class="setting-label-text" for="qr-content">Text o URL</label>
+        <textarea
+          class="setting-textarea"
+          name="url-text-content"
+          id="qr-content">
+        
+Ingresa el texto, URL o datos que quieres convertir a QR...</textarea
         >
-        <label for="range">Tamaño</label>
-        <input ide="range" type="range" />
-        <label for="bug-fixes">Nivel de corrección de errores</label>
-        <select name="bug-fixes" id="bug-fixes">
+        <label class="setting-label-text" for="range">Tamaño</label>
+        <input class="setting-range" id="range" type="range" />
+        <label class="setting-label-text" for="bug-fixes"
+          >Nivel de corrección de errores</label
+        >
+        <select class="setting-select" name="bug-fixes" id="bug-fixes">
           <option value="bajo">Bajo (L) - 7%</option>
           <option value="medio">Medio (M) - 15%</option>
           <option value="alto">Alto (Q) - 25%</option>
           <option value="muy alto">Muy alto (H) - 30%</option>
         </select>
       </div>
-      <div>
+      <div class="main-qr">
         <h3>Código QR</h3>
         <div></div>
       </div>
